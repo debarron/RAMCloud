@@ -1,0 +1,13 @@
+#!/bin/bash
+
+export RAMCLOUD_PROTOCOL="tcp"
+export RAMCLOUD_SERVER_PORT="1101"
+export RAMCLOUD_COORD_PORT="1110"
+
+# To be assigned in start-all
+export RAMCLOUD_LOG_DIR=""
+export RAMCLOUD_BACKUP_DIR=""
+
+export RAMCLOUD_ZOOKEEPER_LEADER=""
+export RAMCLOUD_ZOOKEEPER_BACKUP=""
+export RAMCLOUD_ZOOKEEPER_DATA_DIR=""

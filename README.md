@@ -1,4 +1,22 @@
 # RAMCloud
+
+## Update
+This repository takes some ideas from the Apache Spark project, mainly it includes the *conf* and *sbin* directories.
+
+### conf/ 
+Includes coordinators, servers, and ramcloud-env.sh files.
+
+### sbin/
+Includes the start-all.sh script
+
+### Before deploy
+Make sure to set up conf/coordinators file
+Make sure to set up conf/server file
+Make sure to set up zookeeper first.
+Make sure to update conf/ramcloud-env.sh with zookeeper and ramcloud configuration
+Run ./sbin/start-all.sh MEMORY\_MB LOG\_FILE\_PATH REPLICATION\_FACTOR
+
+
 [![Build Status](https://travis-ci.org/PlatformLab/RAMCloud.svg?branch=master)](https://travis-ci.org/PlatformLab/RAMCloud)
 
 For up to date information on how to install and use RAMCloud, see the RAMCloud Wiki:
