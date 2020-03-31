@@ -11,7 +11,8 @@ R="$3"
 
 ./stop-all.sh
 ./stop-zookeeper.sh
-./exec-in-all.sh "rm -Rf /mydata/rc; rm -Rf /mydata/zoo/version*; mkdir /mydata/rc"
+./exec-in-all.sh "rm -Rf /mydata/rc; rm -Rf /mydata/zoo/version*; rm /mydata/zoo/zookeeper_server.pid; mkdir /mydata/rc"
+./start-zookeeper.sh
 ./get-zookeeper-leader.sh
 ./copy-ramcloud-env.sh
 
